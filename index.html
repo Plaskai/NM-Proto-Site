@@ -3,13 +3,78 @@
 <head>
   <meta charset="utf-8"
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+  <link rel="stylesheet" href="CSS/indexStyle.css">
+  <!-- <link type="text/javascript" src="JavaScript/IndexJS.js"> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-</head>
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
 
-<body>
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace("active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+  </script>
+</head>
+<body style="margin:0;">
   <div class="section-one">
     <h1></h1>
+  </div>
+  <div class="pane3">
+    <h1>What is a FR</h1>
+    <div class="slideshow-container">
+    <div class="mySlides fade">
+      <img class= "circular-firstimage" src="./StockPhotos/stock1.jpeg">
+      <div class="text"><blockquote>"Its an Amazing Service!"</blockquote>
+      <cite>-Johnny Appleseed</site>
+      </div>
+    </div>
+
+    <div class="mySlides fade">
+        <img class="circular-firstimage" src="./StockPhotos/stock2.png">
+      <div class="text">Home</div>
+    </div>
+
+    <div class="mySlides fade">
+      <img class = "circular-firstimage" src="./StockPhotos/stock3.png">
+      <div class="text">Connected</div>
+    </div>
+
+    <div class="mySlides fade">
+      <img class = "circular-firstimage" src="./StockPhotos/stock4.png">
+      <div class="text">Connected</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
   </div>
 </body>
 
