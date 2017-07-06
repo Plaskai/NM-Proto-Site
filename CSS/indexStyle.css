@@ -1,0 +1,35 @@
+.three-column-header-headline {
+  font-family: "Guardian Sans","Helvetica Neue",Arial,sans-serif;
+  font-weight: 300;
+  font-size: 2.8125vw;
+  line-height: 3vw;
+  letter-spacing: .375vw;
+  margin: 0 0 1.5625vw 0;
+  color: #555;
+  text-align: center;
+}
+.three-column-rows{
+  width: 82.5vw;
+  flex-direction: row;
+  height: 100%;
+  text-align: center;
+  margin:0 auto;
+  background-color: red;
+}
+.three-column-rows-left{
+  height: 100%;
+  margin:0 left;
+  background-color: blue;
+  align-items: center;
+  text-align: center;
+  width: 33.33333%;
+  flex-direction: column;
+}
+.three-column-rows-right{
+  width: 27.5vw;
+  height: 100%;
+  text-align: right;
+  margin:0 right;
+  background-color: green;
+  text-align: center;
+}
