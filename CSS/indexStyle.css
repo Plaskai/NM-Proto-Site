@@ -3,8 +3,10 @@
 	position: absolute;
 	color: #002B49;
 	font: bold 24px;
-	margin-top: 250px;
+	margin-top: 230px;
 	margin-left: 700px;
+  padding: 0px 60px 0px 60px;
+  text-align: center;
 }
 
 #frButton {
@@ -60,7 +62,10 @@ body {
 }
 
 .top-nav-collapse {
-  background-color: white;
+  background: rgba(255, 255, 255, 0.0);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: white;
 }
 
 .collapse-text {
@@ -72,6 +77,9 @@ body {
   height: 100vh;
   width: auto;
   background-image: url("../images/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center top;
 }
 
 /* -- Pane 2 -- */
