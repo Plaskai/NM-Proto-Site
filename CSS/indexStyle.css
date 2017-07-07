@@ -1,0 +1,64 @@
+body {
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* -- Navigation Bar -- */
+.navbar-default {
+  padding-left: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #002B49;
+  height: 100px;
+}
+
+.brand-image {
+  width: 250px;
+  height: auto;
+  margin-top: -30px;
+}
+
+.navbar-nav {
+  display: inline-block !important;
+  float: right !important;
+  margin: 40px 20px 0px 0px;
+  font-size: 18px;
+}
+
+.navbar-nav li {
+  display: inline-block !important;
+  list-style: none;
+}
+
+.navbar-nav li a {
+  text-decoration: none;
+  color: white !important;
+}
+
+.navbar-nav li:active {
+  background-color: black !important;
+}
+
+.top-nav-collapse {
+  background-color: white;
+}
+
+.collapse-text {
+  background-color: #002B49 !important;
+}
+
+/* -- Pane 1 -- */
+.section-one {
+  height: 100vh;
+  width: auto;
+  background-image: url('');
+}
+
+/* -- Pane 2 -- */
+.section-two {
+  height: 100vh;
+  width: auto;
+  background-image: url('');
+}
