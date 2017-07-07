@@ -1,3 +1,21 @@
+
+#bannerText {
+	position: absolute;
+	color: #002B49;
+	font: bold 24px;
+	margin-top: 250px;
+	margin-left: 700px;
+}
+
+#frButton {
+	position: relative;
+	margin-top: 400px;
+	margin-left: 875px;
+	background-color: #FEB81D;
+	color: #002B49;
+	border: 1px solid;
+}
+
 body {
   padding: 0px 0px 0px 0px;
   margin: 0px 0px 0px 0px;
@@ -53,7 +71,7 @@ body {
 .section-one {
   height: 100vh;
   width: auto;
-  background-image: url('');
+  background-image: url("../images/banner.jpg");
 }
 
 /* -- Pane 2 -- */
