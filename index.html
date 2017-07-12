@@ -1,82 +1,99 @@
-<!DOCTYPE HTML>
 <html lang="en">
 <head>
-  <meta charset="utf-8"
+  <title>FR Slideshow</title>
+  <meta charset="utf-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="CSS/indexStyle.css">
-  <!-- <link type="text/javascript" src="JavaScript/IndexJS.js"> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script>
-    var slideIndex = 1;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
-
-      if (n > slides.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace("active", "");
-      }
-      slides[slideIndex-1].style.display = "block";
-      dots[slideIndex-1].className += " active";
-    }
-  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="CSS/indexStyle.css">
 </head>
-<body style="margin:0;">
-  <div class="section-one">
-    <h1></h1>
-  </div>
-  <div class="pane3">
-    <h1>What is a FR</h1>
-    <div class="slideshow-container">
-    <div class="mySlides fade">
-      <img class= "circular-firstimage" src="./StockPhotos/stock1.jpeg">
-      <div class="text"><blockquote>"Its an Amazing Service!"</blockquote>
-      <cite>-Johnny Appleseed</site>
+<body style="margin = 0;">
+
+<div class="container">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+      <li data-target="#myCarousel" data-slide-to="5"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" style = "height: 100%;" style = "width: 100%;">
+
+      <div class="item active">
+        <div class = "container-2">
+            <img src="./StockPhotos/mansuit.jpg" alt="Los Angeles" style="width:100%;">
+          <div class="carousel-caption d-none d-md-block" style: "bottom: auto;">
+            <aside class = "pqoute">
+            <p id  = "temp">"Adam helped me plan out my payments now I'm on the road to becoming debt-free"</p>
+            <cite>- Johnny Appleseed</cite>
+            </aside>
+          </div>
+        </div>
       </div>
+
+      <div class="item">
+          <img src="./StockPhotos/mansuit3.png" alt="Chicago" style="width:100%;">
+      </div>
+
+      <div class="item">
+          <img src="./StockPhotos/mansuit2.jpg" alt="New york" style="width:100%;">
+      </div>
+
+      <div class="item active">
+        <div class = "container-2">
+            <img src="./StockPhotos/mansuit.jpg" alt="Los Angeles" style="width:100%;">
+          <div class="carousel-caption d-none d-md-block" style: "bottom: auto;">
+            <aside class = "pqoute">
+            <p id  = "temp">"Adam helped me plan out my payments now I'm on the road to becoming debt-free"</p>
+            <cite>- Johnny Appleseed</cite>
+            </aside>
+          </div>
+        </div>
+      </div>
+
+      <div class="item active">
+        <div class = "container-2">
+            <img src="./StockPhotos/mansuit.jpg" alt="Los Angeles" style="width:100%;">
+          <div class="carousel-caption d-none d-md-block" style: "bottom: auto;">
+            <aside class = "pqoute">
+            <p id  = "temp">"Adam helped me plan out my payments now I'm on the road to becoming debt-free"</p>
+            <cite>- Johnny Appleseed</cite>
+            </aside>
+          </div>
+        </div>
+      </div>
+
+      <div class="item active">
+        <div class = "container-2">
+            <img src="./StockPhotos/mansuit.jpg" alt="Los Angeles" style="width:100%;">
+          <div class="carousel-caption d-none d-md-block" style: "bottom: auto;">
+            <aside class = "pqoute">
+            <p id  = "temp">"Adam helped me plan out my payments now I'm on the road to becoming debt-free"</p>
+            <cite>- Johnny Appleseed</cite>
+            </aside>
+          </div>
+        </div>
+      </div>
+
     </div>
 
-    <div class="mySlides fade">
-        <img class="circular-firstimage" src="./StockPhotos/stock2.png">
-      <div class="text">Home</div>
-    </div>
-
-    <div class="mySlides fade">
-      <img class = "circular-firstimage" src="./StockPhotos/stock3.png">
-      <div class="text">Connected</div>
-    </div>
-
-    <div class="mySlides fade">
-      <img class = "circular-firstimage" src="./StockPhotos/stock4.png">
-      <div class="text">Connected</div>
-    </div>
-
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
   </div>
+</div>
 
-  <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-    <span class="dot" onclick="currentSlide(4)"></span>
-  </div>
-  </div>
 </body>
-
-
 </html>
