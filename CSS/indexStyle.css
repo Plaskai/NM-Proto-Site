@@ -1,3 +1,129 @@
+
+#bannerText {
+	/*position: absolute;*/
+	text-align: center;
+	color: white;
+	font: bold 24px;
+	/*margin-top: 230px;*/
+	/*margin-left: 700px;*/
+  /*padding: 0px 330px 0px 330px;*/
+	float: right;
+}
+
+#frButton {
+	/*position: relative;
+	margin-top: 400px;
+	margin-left: 875px;*/
+	background-color: #FEB81D;
+	color: #002B49;
+	border: none;
+	border-radius: 0px;
+}
+
+body {
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* -- Navigation Bar -- */
+.navbar-default {
+  padding-left: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #002B49;
+  height: 100px;
+}
+
+.brand-image {
+  width: 250px;
+  height: auto;
+  margin-top: -30px;
+}
+
+.navbar-nav {
+  display: inline-block !important;
+  float: right !important;
+  margin: 40px 20px 0px 0px;
+  font-size: 18px;
+}
+
+.navbar-nav li {
+  display: inline-block !important;
+  list-style: none;
+}
+
+.navbar-nav li a {
+  text-decoration: none;
+  color: white !important;
+}
+
+.navbar-nav li:active {
+  background-color: black !important;
+}
+
+.top-nav-collapse {
+  background: rgba(255, 255, 255, 0.5);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: white;
+}
+
+.collapse-text {
+  background-color: #002B49 !important;
+}
+
+/* -- Pane 1 -- */
+.section-one {
+  height: 100vh;
+  width: auto;
+  background-image: url("../images/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center top;
+}
+
+/* -- Pane 2 -- */d
+.section-two {
+  height: 60vh;
+  width: auto;
+  background-image: url('');
+  background-color: #edf0f3;
+
+/* -- Section Five -- */
+.section-five {
+	height: auto;
+	width: auto;
+	text-align: center;
+}
+
+.col-md-8 {
+	text-align: left;
+}
+
+.col-md-4 {
+	text-align: right;
+}
+
+.section-two-row {
+  height: 100vh;
+}
+
+.section-two-column {
+  height: 100vh;
+  /*text-align: center;*/
+}
+
+.section-two-column img {
+  margin-top: 20vh;
+  margin-left: 10vh;
+}
+
+.section-two-column h3 {
+  margin-top: 38vh;
+}
+
 .carousel-caption {
   bottom: auto;
   top: 0px;
