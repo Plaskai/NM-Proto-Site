@@ -84,6 +84,13 @@ body {
   background-position: center top;
 }
 
+/* -- Pane 2 -- */
+.section-two {
+  height: 100vh;
+  width: auto;
+  background-image: url('');
+  background-color: #edf0f3;
+
 /* -- Section Five -- */
 .section-five {
 	height: auto;
@@ -98,3 +105,23 @@ body {
 .col-md-4 {
 	text-align: right;
 }
+
+.section-two-row {
+  height: 100vh;
+}
+
+.section-two-column {
+  height: 100vh;
+  /*text-align: center;*/
+}
+
+.section-two-column img {
+  margin-top: 20vh;
+  margin-left: 10vh;
+}
+
+.section-two-column h3 {
+  margin-top: 38vh;
+}
+
+
