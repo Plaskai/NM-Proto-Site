@@ -1,21 +1,23 @@
 
 #bannerText {
-	position: absolute;
-	color: #002B49;
+	/*position: absolute;*/
+	text-align: center;
+	color: white;
 	font: bold 24px;
-	margin-top: 230px;
-	margin-left: 700px;
-  padding: 0px 60px 0px 60px;
-  text-align: center;
+	/*margin-top: 230px;*/
+	/*margin-left: 700px;*/
+  /*padding: 0px 330px 0px 330px;*/
+	float: right;
 }
 
 #frButton {
-	position: relative;
+	/*position: relative;
 	margin-top: 400px;
-	margin-left: 875px;
+	margin-left: 875px;*/
 	background-color: #FEB81D;
 	color: #002B49;
-	border: 1px solid;
+	border: none;
+	border-radius: 0px;
 }
 
 body {
@@ -62,7 +64,7 @@ body {
 }
 
 .top-nav-collapse {
-  background: rgba(255, 255, 255, 0.0);
+  background: rgba(255, 255, 255, 0.5);
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-bottom-color: white;
@@ -88,6 +90,20 @@ body {
   width: auto;
   background-image: url('');
   background-color: #edf0f3;
+
+/* -- Section Five -- */
+.section-five {
+	height: auto;
+	width: auto;
+	text-align: center;
+}
+
+.col-md-8 {
+	text-align: left;
+}
+
+.col-md-4 {
+	text-align: right;
 }
 
 .section-two-row {

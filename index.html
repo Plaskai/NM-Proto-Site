@@ -5,23 +5,11 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/indexStyle.css">
+  <script type="text/javascript" src=javascript/indexjs.js></script>
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
 </head>
 
 <body>
-  <script>
-  $(window).scroll(function() {
-    if ($(".navbar").offset().top > 50) {
-      $(".navbar-default").addClass("top-nav-collapse");
-      $(".menu-btn").addClass("collapse-text");
-      $('.navbar-brand img').attr('src', './img/nmlogo.png');
-    } else {
-      $(".navbar-default").removeClass("top-nav-collapse");
-      $(".menu-btn").removeClass("collapse-text");
-      $('.navbar-brand img').attr('src', './img/nmlogoW.png');
-    }
-  });
-  </script>
   <!--Navigation Bar-->
   <nav class="navbar navbar-default">
     <div class="containter-fluid">
@@ -32,29 +20,37 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-          <a class="navbar-brand" href="#"><img class="brand-image" src="./img/nmlogoW.png"></a>
+          <a class="navbar-brand" href="#"><img class="brand-image" src="./images/nmlogoW.png"></a>
           <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#whynm">Why NM</a></li>
-            <li><a class="menu-btn" href="#tools">Tools</a></li>
-            <li><a class="menu-btn" href="#content">Content</a></li>
-            <li><a class="menu-btn" href="#life-money">Life & Money</a></li>
+            <li><a class="menu-btn" href="#tools-content">Tools & Content</a></li>
+            <li><a class="menu-btn" href="#content">Life & Money</a></li>
+            <!--<li><a class="menu-btn" href="#life-money">Life & Money</a></li>-->
           </ul>
       </div>
     </div>
+  </div>
   </nav>
 
   <!-- Pane 1 -->
-  <div class="section-one" id="whynm">
-      <!--Background-image, text on the left, panes on the right -->
-      <!-- <img id = "banner" src="images/banner.jpg"> -->
-      <div class="container-fluid">
-        <h1 id="bannerText">Never Miss a Moment With Northwestern Mutual </h1>
-        <div class="row">
-          <div class="col-md-6"><button id = "frButton" class="btn btn-primary">Get matched with a financial representative</button></div>
-          <!--<div class="col-md-6"><button id = "frButton" class="btn btn-primary">Learn More</button></div>-->
+  <!-- Unfinished work around for the buttons, I'll work on this later-->
+  <div class="section-one" id="whyNM">
+    <div class="cover" style="height:100vh;background-color:rgba(0,0,0,0.3);">
+      <div class="container">
+        <div class="banner" style="margin-top:200px;padding-left:360px;margin-left: 300px;">
+          <h1 id="bannerText">Never Miss a Moment with NorthWestern Mutual</h1>
+          <div class="row">
+          <div class="col-sm-6">
+            <button id="frButton" class="btn btn-primary">Get matched with a financial representative</button>
+          </div>
+          <div class="col-sm-6">
+            <br><br><br><button id="frButton" class="btn btn-primary">Learn More</button>
+          </div>
         </div>
       </div>
+      </div>
+    </div>
   </div>
 
   <!-- Pane 2 -->
@@ -71,9 +67,176 @@
       <p> Northwestern Mutual is a .... </p>
       <h2> We help you navigate your life's road map to get you to your desired destination </h2>
     </div>
+      
+      <!--<div class="container">
+        <h1 id="bannerText">Never Miss a Moment With Northwestern Mutual </h1>
+        <div class="row">
+          <div class="col-md-6"><button style="border: none;" id="frButton" class="btn btn-primary">Get matched with a financial representative</button></div>
+          <div class="col-md-6"><button id = "frButton" class="btn btn-primary">Learn More</button></div>
+        </div>
+      </div>-->
+
+  <!-- Pane Five -->
+  <div class="section-five" id="tools-content" style="padding: 42px;">
+      <div class="container-fluid">
+        <div class="row" id="tools-content-row">
+          <div class="col-md-6" id="tools-content-col">
+            <!--Tools Section-->
+            <h2 style="color:#FEB81D;">Tools</h2>
+          <a href="http://www.themintgrad.org/try-it/financial-fitness-test/" target="_blank">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="./images/004-money-bag.png" style="margin-top:30px;height:40px;">
+                </div>
+                <div class="col-md-8">
+                  <h3 class="tools-content">Financial Fitness Test</h3>
+                  <h5>When it comes to managing money, how well do you perform?</h5>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="http://www.themintgrad.org/try-it/budget-worksheet/" target="_blank">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="./images/001-checklist.png" style="margin-top:30px;height:40px;">
+                </div>
+                <div class="col-md-8">
+                  <h3 class="tools-content">Budget Worksheet</h3>
+                  <h5>All good things start with a plan</h5>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="http://www.themintgrad.org/try-it/debt-calculator/" target="_blank">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="./images/003-budget.png" style="margin-top:30px;height:40px;">
+                </div>
+                <div class="col-md-8">
+                  <h3 class="tools-content">Debt Calculator</h3>
+                  <h5>Downsize your debt</h5>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="http://www.themintgrad.org/try-it/cash-calculator/" target="_blank">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="./images/002-cash.png" style="margin-top:30px;height:40px;">
+                </div>
+                <div class="col-md-8">
+                  <h3 class="tools-content">Cash Calculator</h3>
+                  <h5>See how quickly a little bit each month can add up</h5>
+                </div>
+              </div>
+            </div>
+          </a>
+          </div>
+          <div class="col-md-6" id="tools-content-col" style="border-left:1px solid black;">
+            <!--Content Section-->
+            <h2 style="color:#FEB81D;">Content</h2>
+          <a href="#">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="./images/004-money-bag.png" style="margin-top:30px;height:40px;">
+                </div>
+                <div class="col-md-8">
+                  <h3 class="tools-content">Financial Fitness Test</h3>
+                  <h5>When it comes to managing money, how well do you perform?</h5>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="./images/001-checklist.png" style="margin-top:30px;height:40px;">
+                </div>
+                <div class="col-md-8">
+                  <h3 class="tools-content">Budget Worksheet</h3>
+                  <h5>All good things start with a plan</h5>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="./images/003-budget.png" style="margin-top:30px;height:40px;">
+                </div>
+                <div class="col-md-8">
+                  <h3 class="tools-content">Debt Calculator</h3>
+                  <h5>Downsize your debt</h5>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="./images/002-cash.png" style="margin-top:30px;height:40px;">
+                </div>
+                <div class="col-md-8">
+                  <h3 class="tools-content">Cash Calculator</h3>
+                  <h5>See how quickly a little bit each month can add up</h5>
+                </div>
+              </div>
+            </div>
+          </a>
+            <!--<a href="http://www.themintgrad.org/try-it/" target="_blank">View More</a>-->
+          </div>
+
+          </div>
+        </div>
   </div>
+  <!--End Pane 5-->
 
+  <!--Pane 6-->
+<div class="section-six" style="padding:12px 0px 25px 0px;background-color:#CCCCCC;margin: 0px 190px 10px 190px;">
+  <div class="container-fluid">
+    <h2 style="text-align:center;padding-top:7px;color:#002B49;letter-spacing:2px;text-transform:uppercase;">Get matched with an FR</h2>
+    <h3 style="text-align:center;padding-bottom:18px;color:white;">Speak to someone about your financial needs</h3>
+    <form style="text-align:center;">
+      <!--<div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+          </div>
+          <div class="col-md-6">
+          </div>
+        </div>
+      </div>-->
+      <div>
+        <p style="font-size:22px;display:inline-block;padding-right:14px;">Name: </p><input style="font-size:22px;margin-right:14px;" type="text" name="firstname">
+        <p style="font-size:22px;display:inline-block;">Email address:</p>
+        <input style="font-size:22px;" type="text" name="firstname"><br><br>
+        <input type="submit" value="Submit" style="padding:4px 12px 4px 12px;color:white;background-color:#002B49;border: none;">
+      </div>
+    </form>
+  </div>
+</div>
 
+  <div class="footer" style="height:60vh;background-color:#002B49;padding-top:40px;">
+    <div class="container" style="text-align:center;">
+      <div class="row" style="text-align:center;">
+        <div class="col-md-4" style="text-align:center;">
+          <h3 style="color:white;">footer</h3>
+        </div>
+        <div class="col-md-4" style="text-align:center;border-left:1px white solid;">
+          <h3 style="color:white;">footer</h3>
+        </div>
+        <div class="col-md-4" style="text-align:center;border-left:1px white solid;">
+          <h3 style="color:white;">footer</h3>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 
