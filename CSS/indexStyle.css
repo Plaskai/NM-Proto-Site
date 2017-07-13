@@ -84,9 +84,9 @@ body {
   background-position: center top;
 }
 
-/* -- Pane 2 -- */
+/* -- Pane 2 -- */d
 .section-two {
-  height: 100vh;
+  height: 60vh;
   width: auto;
   background-image: url('');
   background-color: #edf0f3;
