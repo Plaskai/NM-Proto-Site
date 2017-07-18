@@ -1,13 +1,5 @@
-/*
-body {
-  text-align: center;
-}
-.section-four {
-  display: inline-block;
-  text-align: center;
-  background-color: #edf0f3;
-  width:100%;
-}
+
+
 .three-column-header-headline {
   font-family: "Guardian Sans","Helvetica Neue",Arial,sans-serif;
   font-weight: 400;
@@ -20,12 +12,13 @@ body {
   margin-top: 25px;
   margin-bottom: 50px;
 }
+/*
 h1{
   margin-top: 50px;
   margin-bottom: 25px;
   font-size: 2vw;
   font-weight: 300;
-}
+}*/
 #column-description{
    margin: auto;
   font-family: "Guardian Sans","Helvetica Neue",Arial,sans-serif;
@@ -36,7 +29,7 @@ h1{
   width: 20vw;
   margin-bottom: 50px;
 }
-*/
+
 #bannerText {
 	/*position: absolute;*/
 	text-align: center;
@@ -62,12 +55,13 @@ body {
   padding: 0px 0px 0px 0px;
   margin: 0px 0px 0px 0px;
   font-family: 'Source Sans Pro', sans-serif;
+	text-align: center;
 }
 
 /* -- Navigation Bar -- */
 .navbar-default {
   padding-left: 10px;
-  position: fixed;
+  /*position: fixed;*/
   top: 0;
   width: 100%;
   background-color: #002B49;
@@ -120,14 +114,25 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center top;
+	margin-top: -20px;
 }
 
-/* -- Pane 2 -- */d
+/* -- Pane 2 -- */
 .section-two {
-  height: 60vh;
+  height: auto;
   width: auto;
   background-image: url('');
-  background-color: #edf0f3;
+  background-color: white;
+}
+
+.section-four {
+	  /*display: inline-block;*/
+	  text-align: center;
+	  /*background-color: #002B49;*/
+		background-color: #edf0f3;
+		height: auto;
+		color: #002B49;
+	}
 
 /* -- Section Five -- */
 .section-five {
@@ -144,6 +149,7 @@ body {
 	text-align: right;
 }
 
+/*
 .section-two-row {
   height: 100vh;
 }
@@ -160,7 +166,7 @@ body {
 
 .section-two-column h3 {
   margin-top: 38vh;
-}
+}*/
 
 .carousel-caption {
   bottom: auto;
