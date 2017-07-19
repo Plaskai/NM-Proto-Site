@@ -75,7 +75,7 @@ body {
   width: 100%;
   /*background-color: #002B49;*/
   background: rgba(0, 0, 0, .2);
-  height: 125px;
+  height: 100px;
 }
 
 .brand-image {
@@ -120,7 +120,7 @@ body {
 /* -- Pane 1 -- */
 
 .section-one {
-  height: 100vh;
+  height: 90vh;
   width: auto;
   background-image: url("../images/banner.jpg");
   background-repeat: no-repeat;
