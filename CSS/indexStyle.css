@@ -1,5 +1,3 @@
-
-
 .three-column-header-headline {
   font-family: "Guardian Sans","Helvetica Neue",Arial,sans-serif;
   font-weight: 400;
@@ -33,8 +31,10 @@ h1{
 #bannerText {
 	/*position: absolute;*/
 	text-align: center;
-	color: white;
-	font: bold 40px;
+	color: black;
+	font: 40px;
+  font-family: "Guardian Sans","Helvetica Neue",Arial,sans-serif;
+  font-weight: normal;
 	/*margin-top: 230px;*/
 	/*margin-left: 700px;*/
   /*padding: 0px 330px 0px 330px;*/
