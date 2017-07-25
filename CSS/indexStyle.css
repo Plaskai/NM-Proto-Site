@@ -47,14 +47,14 @@ h1{
 
 #frButton {
   /*position: relative;
-	margin-top: 400px;
-	margin-left: 875px;*/
+	margin-top: 400px;*/
+	margin-left: 50px;
   background-color: #FEB81D;
   color: #002B49;
   border: none;
   border-radius: 0px;
   padding: 15px 32px;
-  width: 300px;
+  width: 150px;
   height: 50px;
   border-radius: 5px;
   text-align: center;
@@ -420,10 +420,10 @@ select {
 }
 .footer{
   text-decoration: none;
-line-height: 1.25vw;
-font-size: .8125vw;
-letter-spacing: .0625vw;
-margin-bottom: .625vw;
+  line-height: 1.25vw;
+  font-size: .8125vw;
+  letter-spacing: .0625vw;
+  margin-bottom: .625vw;
 }
 .footer-logo{
 /*margin-bottom: 20px;*/

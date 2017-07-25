@@ -1,0 +1,469 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- <link rel="stylesheet" type="text/css" href="CSS/indexStyle.css"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+
+<!-- (Optional) Latest compiled and minified JavaScript translation files -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/i18n/defaults-*.min.js"></script> -->
+
+  <style>
+    nav {
+      margin-bottom: -100px;
+    }
+
+    body {
+      position: relative;
+      margin: 0 auto;
+    }
+
+    .center {
+      position: relative;
+      z-index: 2;
+      margin: 0 auto 6.5625vw auto;
+      padding: 2.5vw 8.75vw 0 8.75vw;
+      min-height: 7.5vw;
+      width: 80vw;
+      background-color: #fff;
+      text-align: left;
+      -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+      margin-top: -60px;
+    }
+
+    .intro {
+      /*font-family: "Guardian Sans", "Helvetica Neue";*/
+      text-align: center;
+      /*font-size: 20px;*/
+      /*padding-bottom: 30px;
+      padding-left: 50px;*/
+      /*color: #F5F5F5;*/
+      font-family: "Guardian Sans", "Helvetica Neue", Arial, sans-serif;
+      font-weight: 200;
+      font-size: 1.5625vw;
+      margin: 0 0 3.125vw 0;
+      line-height: 2.875vw;
+      letter-spacing: .0625vw;
+      color: #2a2a2a;
+    }
+
+    .madlib {
+      /*margin-top: 30px;*/
+      padding-top: 60px;
+      font-size: 30px;
+      /*font-family: Arial, Helvetica, sans-serif;*/
+      font-family: "Guardian Sans", "Helvetica Neue";
+      /*color: #F5F5F5;*/
+      background-color: #fff;
+      width: 100%;
+    }
+
+    input {
+      font-size: 30px;
+      text-align: center;
+      border: none;
+      border-bottom: 2px solid #002B49;
+      background: transparent;
+      color: #002B49;
+    }
+
+    input:focus {
+      outline: none;
+    }
+
+    .input--age {
+      width: 75px;
+    }
+
+    .input--age--complete {
+      width: 60px;
+      border: none;
+    }
+
+    .input--firstname,
+    .input--lastname {
+      width: 200px;
+    }
+
+    .input--zip {
+      width: 15%;
+    }
+
+    #Journey {
+      font-family: "Guardian Sans","Helvetica Neue",Arial,sans-serif;
+      font-weight: 200;
+      font-size: 4.375vw;
+      color: #4e4e4e;
+      letter-spacing: .22625vw;
+      line-height: 5.1875vw;
+      padding: 0;
+      margin: 0 0 3.75vw 0;
+      text-align: center;
+    }
+    #Headers {
+      font-family: "Guardian Sans","Helvetica Neue",Arial,sans-serif;
+      font-weight: 200;
+      font-size: 3.375vw;
+      color: #4e4e4e;
+      letter-spacing: .22625vw;
+      line-height: 5.1875vw;
+      padding: 0;
+      margin: 0 0 3.75vw 0;
+      text-align: center;
+    }
+
+    .get-matched {
+      padding-top: 20px;
+      padding-bottom: 30px;
+      text-align: center;
+    }
+
+    .submission {
+      padding: 4px 12px 4px 12px;
+      font-size: 20px;
+      color: white;
+      background-color: #002B49;
+      border: none;
+      height: 50px;
+      width: 150px;
+      border-radius: 5px;
+      position: absolute;
+      margin-top: 30px;
+      margin-left: -150px;
+    }
+
+    .submission:hover {
+      background-color: #FEB81D;
+    }
+
+    #subscribe {
+      font-size: 12px;
+      margin-top: 30px;
+      margin-left: 150px;
+    }
+
+    .navbar-default {
+      padding-left: 10px;
+      position: relative;
+      top: 0;
+      width: 100%;
+      /*background-color: #002B49;*/
+      /*background: rgba(0, 0, 0, .3);*/
+      height: 100px;
+      border-bottom: 1px solid #fff;
+    }
+
+    .brand-image {
+      width: 250px;
+      height: auto;
+      margin-top: -40px;
+      /*margin-bottom: -30px;*/
+    }
+
+    .navbar-nav {
+      display: inline-block !important;
+      float: right !important;
+      margin: 40px 20px 0px 0px;
+      font-size: 18px;
+    }
+
+    .navbar-nav li {
+      display: inline-block !important;
+      list-style: none;
+    }
+
+    .navbar-nav li a {
+      text-decoration: none;
+      color: white !important;
+    }
+
+    .navbar-nav li:active {
+      background-color: black !important;
+    }
+
+    .top-nav-collapse {
+      background: rgba(255, 255, 255, 0.5);
+      border-bottom-style: solid;
+      border-bottom-width: 1px;
+      border-bottom-color: white;
+    }
+
+    .collapse-text {
+      background-color: #002B49 !important;
+    }
+
+    .madlib li {
+      list-style: none;
+    }
+
+    .hidden {
+      visibility: hidden;
+    }
+
+    .active {
+      visibility: visible;
+      padding-top: 30px;
+      font-size: 1.875vw;
+      letter-spacing: .04688vw;
+    }
+    .active-subscribe{
+      visibility: none;
+    }
+
+    .complete {
+      font-size: 20px;
+      /*font-weight: bold;*/
+      outline: none;
+    }
+
+
+    .form-madlib {
+      font-weight: 400;
+      background-color: #fff;
+      /*padding-right: -100px;*/
+    }
+
+    .circle {
+      transition-duration: .25s;
+      border-radius: .625vw;
+      padding: 0;
+      height: 1.1875vw;
+      width: 1.1875vw;
+      margin: 0 .25vw;
+      background-color: #b2c8d8;
+      cursor: pointer;
+    }
+
+    .is-active {
+      background-color: #00487c;
+    }
+
+    .progression-dots {
+      padding: 0;
+      padding-bottom: 15px;
+      margin: 0;
+      list-style: none;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+    }
+
+    .help-pane {
+      padding-top: 50px;
+      background-color: #edf0f3;
+      width: 100%;
+    }
+
+    #column-description {
+      text-align: center;
+      margin: auto;
+      font-family: "Guardian Sans", "Helvetica Neue", Arial, sans-serif;
+      font-weight: 300;
+      font-size: 1.25vw;
+      line-height: 2.125vw;
+      letter-spacing: .0625vw;
+      width: 20vw;
+      margin-bottom: 50px;
+    }
+
+    .col-md-4 {
+      text-align: right;
+    }
+
+    .hero-image {
+      /*background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("Images/starry-night.jpg");*/
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      position: relative;
+      z-index: 1;
+      overflow: visible;
+      padding: 6.25vw 0 6.25vw 0;
+      height: 33.75vw;
+      width: 100vw;
+      background-color: #042f4b;
+      /*position: absolute;*/
+    }
+    .starry-night{
+      width: 100%;
+    }
+    .goalSteps{
+      /*margin-top: 50px;*/
+      width: 100%
+    }
+    .form-madlib li {
+      margin-left: 100px;
+    }
+    .btn-new {
+      background-color: transparent;
+      border-bottom: 2px solid #002B49;
+      border-radius: 0px;
+      text-align: center;
+      font-size: 30px;
+      width: 100px;
+      color: #002B49;
+    }
+
+  </style>
+  <script>
+    function nameProgession(e) {
+      var key = e.keyCode || e.which;
+      if (document.getElementById("AgeGoal").className = "active" && key == 13) {
+        document.getElementById("AgeGoal").className = "complete";
+        document.getElementById("ageInput").className = "input--age--complete";
+        document.getElementById("name").className = "active";
+        document.getElementById("circle-2").className = "circle is-active";
+      }
+    }
+
+    function zipProgression(e) {
+      var key = e.keycode || e.which;
+      if (document.getElementById("name").className = "active" && key == 13) {
+        document.getElementById("name").className = "complete";
+        document.getElementById("firstname").className = "input--complete";
+        document.getElementById("lastname").className = "input--complete";
+        document.getElementById("zip").className = "active";
+        document.getElementById("circle-3").className = "circle is-active";
+      }
+    }
+
+    function contactProgression(e) {
+      var key = e.keycode || e.which;
+      if (document.getElementById("zip").className = "active" && key == 13) {
+        document.getElementById("zip").className = "complete";
+        document.getElementById("zipcode").className = "input--complete";
+        document.getElementById("contact").className = "active";
+        document.getElementById("circle-4").className = "circle is-active";
+      }
+    }
+    function submissionProgression(e) {
+       var key = e.keycode || e.which;
+       if(document.getElementById("contact").className = "active" && key == 13) {
+         documemt.getElementById("contact").className = "complete";
+         document.getElementById("email").className = "input--complete";
+         document.getElementById("phone").className = "input--complete";
+         document.getElementById("subscribe").className="active-subscribe";
+         document.getElementById("getMatched").className="submission"
+         document.getElementById("circle-4").className = "circle is-active";
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="containter-fluid">
+      <div class="navbar header">
+        <a class="navbar-brand" href="#"><img class="brand-image" src="./Images/nmlogoW.png"></a>
+      </div>
+    </div>
+  </nav>
+  <div "hero-image">
+    <img src="Images/starry-night.jpg" class="starry-night">
+    <!-- <h1 style="color:white;z-index:3;">"Success is a journey, not a destination."</h1> -->
+  </div>
+    <!-- <h1 id="Journey">Start your Journey</h1> -->
+  <div class="center" name="form-panel">
+    <h1 id="Journey">Start your Journey</h1>
+    <div class="intro">
+      At Northwestern Mutual, we’re here to provide a GPS for your money goals. Our financial advisors are trained to meet you at your particular life stage, whether that be paying off student loans, saving for your dream apartment, or buying that first pack
+      of diapers. Navigating life’s crazy twists and turns has never been more organized (or empowering). With thousands of FRs at your disposal let us get you started on your path to financial empowerment!
+    </div>
+  </div>
+    <div name="HowWeHelp" class="Help-pane">
+      <h1 id="Headers"> How We Help</h1>
+      <div class="container-fluid" style="margin-bottom:30px;">
+        <div class="row" style="margin-top:-15px; text-align:center;">
+          <div class="col-md-4" style="text-align:center;">
+            <img src="./Images/Calendar.png" style="width:auto;height:125px;">
+          </div>
+          <div class="col-md-4" style="text-align:center;">
+            <img src="./Images/Sign.png" style="width:auto;height:125px;">
+          </div>
+          <div class="col-md-4" style="text-align:center;">
+            <img src="./Images/Plane.png" style="width:auto;height:125px;">
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div name="past" class="col-md-4" style="text-align: center;">
+            <h3>Step 1: Past</h3>
+            <p id="column-description">Student loans? Credit card debt? Past debt, no problem. We’ll help you form the best plan to pay off your debt incurred in the past.
+              <p>
+          </div>
+          <div name="present" class="col-md-4" style="text-align: center;">
+            <h3>Step 2: Present</h3>
+            <p id="column-description">Rent or mortgates are some of the biggest expenses while balancing day to day expenses. We’ll help you find a plan to manage day to day expenses.</p>
+          </div>
+          <div name="future" class="col-md-4" style="text-align: center;">
+            <h3>Step 3: Future</h3>
+            <p id="column-description">The key to building your future is starting now. There’s literally no time like the present.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="goalSteps">
+      <form class="madlib">
+        <h2 id="Headers">FIND AN ADVISOR IN YOUR AREA</h2>
+        <div>
+          <ul class="progression-dots">
+            <li class="circle is-active"></li>
+            <li id="circle-2" class="circle"></li>
+            <li id="circle-3" class="circle"></li>
+            <li id="circle-4" class="circle"></li>
+            <li id="circle-5" class="circle"></li>
+          </ul>
+        </div>
+          <ul name="form" class="form-madlib">
+            <li id="AgeGoal" class="placement active">I am <input id="ageInput" class="input--age" type=age placeholder="30"> and I care about
+              <div class="btn-group">
+                <select class="selectpicker" data-style="btn-new" data-width="520px">
+                    <option onclick="nameProgession(event)">Sorting through my past obligations</option>
+                    <option onclick="nameProgession(event)">Securing What I care about</option>
+                    <option onclick="nameProgession(event)">Planning for the Futuree</option>
+                    <option onclick="nameProgession(event)">All of the above</option>
+                    <option onclick="nameProgession(event)">I'm not sure</option>
+                </select>
+              </div>
+            </li>
+            <li id="name" class="placement active">My full name is <input id="firstname" class="input--firstname" type="text" placeholder="first name"> <input id="lastname" class="input--lastname" type="text" placeholder="last name" onkeypress="zipProgression(event)"></li>
+            <li id="zip" class="placement active">I am located in <input id = "zipcode" class="input--zip" type="zip" placeholder="12340" onkeypress="contactProgression(event)"></li>
+            <li id="contact" class="placement active">You can email me at <input class="input--email" type="email" placeholder="email"> or call me at <input class="input--phone" type="phone" placeholder="phone number" onkeypress="submissionProgression(event)"></li>
+          </ul>
+      <div id="subscription" class="hiden">
+        <input type="checkbox" id="subscribe" name="subscribe" value="newsletter">
+        <label for="subscribe">Sign up for relevant articles to help you reach financial freedom</label>
+      </div>
+      <div class="get-matched">
+        <button id="getMatched" class="hidden" type="button">Get Matched</button>
+      </div>
+      </form>
+    </div>
+</body>
+
+</html>
