@@ -88,16 +88,13 @@
     li {
       list-style: none;
     }
-
     nav {
       margin-bottom: -100px;
     }
-
     body {
       position: relative;
       margin: 0 auto;
     }
-
     .center {
       position: relative;
       z-index: 2;
@@ -115,7 +112,6 @@
       align-items: flex-start;
       margin-top: -60px;
     }
-
     .intro {
       /*font-family: "Guardian Sans", "Helvetica Neue";*/
       text-align: center;
@@ -131,7 +127,6 @@
       letter-spacing: .0625vw;
       color: #2a2a2a;
     }
-
     .madlib {
       /*margin-top: 30px;*/
       padding-top: 60px;
@@ -142,7 +137,6 @@
       background-color: #fff;
       width: 100%;
     }
-
     input {
       font-size: 30px;
       text-align: center;
@@ -151,29 +145,23 @@
       background: transparent;
       color: #002B49;
     }
-
     input:focus {
       outline: none;
     }
-
     .input--age {
       width: 75px;
     }
-
     .input--age--complete {
       width: 60px;
       border: none;
     }
-
     .input--firstname,
     .input--lastname {
       width: 200px;
     }
-
     .input--zip {
       width: 15%;
     }
-
     #Journey {
       font-family: "Guardian Sans", "Helvetica Neue", Arial, sans-serif;
       font-weight: 200;
@@ -185,7 +173,6 @@
       margin: 0 0 3.75vw 0;
       text-align: center;
     }
-
     #Headers {
       font-family: "Guardian Sans", "Helvetica Neue", Arial, sans-serif;
       font-weight: 200;
@@ -197,13 +184,11 @@
       margin: 0 0 3.75vw 0;
       text-align: center;
     }
-
     .get-matched {
       padding-top: 20px;
       padding-bottom: 30px;
       text-align: center;
     }
-
     .submission {
       padding: 4px 12px 4px 12px;
       font-size: 20px;
@@ -218,17 +203,14 @@
       margin-left: -60px;
       margin-bottom: 100px;
     }
-
     .submission:hover {
       background-color: #FEB81D;
     }
-
     #subscribe {
       font-size: 12px;
       margin-top: 30px;
       margin-left: 150px;
     }
-
     .navbar-default {
       content: "";
       position: absolute;
@@ -239,83 +221,70 @@
       background: linear-gradient(rgba(0, 0, 0, .51), transparent);
       height: 6.75vw;
     }
-
     .brand-image {
       width: 20%;
       height: auto;
       margin-top: -60px;
     }
-
     .navbar {
       position: relative;
       min-height: 50px;
       border-radius: 0px !important;
       margin-bottom: -170px !important;
+      border-style: none;
       border-top: none;
       border-left: none;
       border-right: none;
       border-bottom: : 1px solid transparent;
     }
-
     .navbar-nav {
       display: inline-block !important;
       float: right !important;
       margin: 40px 20px 0px 0px;
       font-size: 20px;
     }
-
     .navbar-nav li {
       display: inline-block !important;
       list-style: none;
     }
-
     .navbar-nav li a {
       text-decoration: none;
       color: white !important;
     }
-
     .navbar-nav li:active {
       background-color: black !important;
     }
-
     .top-nav-collapse {
       background: rgba(255, 255, 255, 0.5);
       border-bottom-style: solid;
       border-bottom-width: 1px;
       border-bottom-color: white;
     }
-
     .collapse-text {
       background-color: #002B49 !important;
     }
-
     .hidden {
       visibility: hidden;
     }
-
     .active {
       visibility: visible;
       padding-top: 30px;
       font-size: 1.875vw;
       letter-spacing: .04688vw;
     }
-
     .active-subscribe {
       visibility: none;
     }
-
     .complete {
       font-size: 20px;
       /*font-weight: bold;*/
       outline: none;
     }
-
     .form-madlib {
       font-weight: 400;
       background-color: #fff;
       /*padding-right: -100px;*/
     }
-
     .circle {
       transition-duration: .25s;
       border-radius: .625vw;
@@ -326,11 +295,9 @@
       background-color: #b2c8d8;
       cursor: pointer;
     }
-
     .is-active {
       background-color: #00487c;
     }
-
     .progression-dots {
       padding: 0;
       padding-bottom: 15px;
@@ -349,13 +316,11 @@
       -ms-flex-pack: center;
       justify-content: center;
     }
-
     .help-pane {
       padding-top: 50px;
       background-color: #edf0f3;
       width: 100%;
     }
-
     #column-description {
       text-align: center;
       margin: auto;
@@ -367,11 +332,9 @@
       width: 20vw;
       margin-bottom: 50px;
     }
-
     .col-md-4 {
       text-align: right;
     }
-
     .hero-image {
       /*background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("Images/starry-night.jpg");*/
       -webkit-justify-content: center;
@@ -386,20 +349,16 @@
       background-color: #042f4b;
       /*position: absolute;*/
     }
-
     .starry-night {
       width: 100%;
     }
-
     .goalSteps {
       /*margin-top: 50px;*/
       width: 100%
     }
-
     .form-madlib li {
       margin-left: 100px;
     }
-
     .btn-new {
       background-color: transparent;
       border-bottom: 2px solid #002B49;
@@ -434,7 +393,6 @@
         document.getElementById("circle-2").className = "circle is-active";
       }
     }
-
     function zipProgression(e) {
       var key = e.keycode || e.which;
       if (document.getElementById("name").className = "active" && key == 13) {
@@ -445,7 +403,6 @@
         document.getElementById("circle-3").className = "circle is-active";
       }
     }
-
     function contactProgression(e) {
       var key = e.keycode || e.which;
       if (document.getElementById("zip").className = "active" && key == 13) {
@@ -455,7 +412,6 @@
         document.getElementById("circle-4").className = "circle is-active";
       }
     }
-
     function submissionProgression(e) {
       var key = e.keycode || e.which;
       if (document.getElementById("contact").className = "active" && key == 13) {
@@ -479,7 +435,7 @@
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
               <li><a class="menu-btn" href="./index.html#whyNM">Why NM</a></li>
-              <li><a class="menu-btn" href="./index.html#tools-content">Tools & Content</a></li>
+              <!-- <li><a class="menu-btn" href="./index.html#tools-content">Tools & Content</a></li> -->
               <li><a class="menu-btn" href="#content">Life & Money</a></li>
             </ul>
           </div>
@@ -490,10 +446,9 @@
     <!-- <h1 style="color:white;z-index:3;">"Success is a journey, not a destination."</h1> -->
   </div>
   <div class="center" name="form-panel">
-    <h1 id="Journey">Start your Journey</h1>
+    <h1 id="Journey">Congratulations On Taking The First Step Towards Financial Freedom</h1>
     <div class="intro">
-      At Northwestern Mutual, we’re here to provide a GPS for your money goals. Our financial advisors are trained to meet you at your particular life stage, whether that be paying off student loans, saving for your dream apartment, or buying that first pack
-      of diapers. Navigating life’s crazy twists and turns has never been more organized (or empowering). With thousands of FRs at your disposal let us get you started on your path to financial empowerment!
+      Our financial planners will partner with you on a simple 3-step plan. We’re here to help alleviate your financial burdens, secure what you have and care about today, and plan for your future.
     </div>
   </div>
   <div name="HowWeHelp" class="Help-pane">
@@ -514,17 +469,19 @@
     <div class="container-fluid">
       <div class="row">
         <div name="past" class="col-md-4" style="text-align: center;">
-          <h3>Step 1: Past</h3>
-          <p id="column-description">Student loans? Credit card debt? Past debt, no problem. We’ll help you form the best plan to pay off your debt incurred in the past.
-            <p>
+          <h3>Break Free</h3>
+          <p id="column-description">Student loans? Credit card debt? No problem. We’ll help you form a holistic plan to pay off any incurred debt.
+          </p>
         </div>
         <div name="present" class="col-md-4" style="text-align: center;">
-          <h3>Step 2: Present</h3>
-          <p id="column-description">Rent or mortgates are some of the biggest expenses while balancing day to day expenses. We’ll help you find a plan to manage day to day expenses.</p>
+          <h3>Maintain Your Lifestyle</h3>
+          <p id="column-description">Your greatest assets are your income, your time, and your family.  We will set you up with a plan to protect them.
+          </p>
         </div>
         <div name="future" class="col-md-4" style="text-align: center;">
-          <h3>Step 3: Future</h3>
-          <p id="column-description">The key to building your future is starting now. There’s literally no time like the present.</p>
+          <h3>Plan For The Future</h3>
+          <p id="column-description">TThe key to building your future is starting now. If you want to live tomorrow your way, there’s no better time than the present to begin
+            .</p>
         </div>
       </div>
     </div>
@@ -576,7 +533,7 @@
           <div class = "footer-logo">
             <img class = "brand-image-footer" src = "Images/Footer-logo.png" alt = "NorthWestern Mutual">
           </div>
-          <ul class = "sitemap-menu" name = "sitemap">
+          <!-- <ul class = "sitemap-menu" name = "sitemap">
             <li class = "sitemap-list">
               <a class = "sitemap--links"  href="#">About Us </a>
               <a class = "sitemap--links"  href="#">Contact Us </a>
@@ -593,7 +550,7 @@
               <a  class = "sitemap--links" href="#">Sitemap  </a>
               <a class = "sitemap--links" href="#">Privacy </a>
             </li>
-          </ul>
+          </ul> -->
         </div>
         <div class="col-md-4" style="text-align:center;">
           <h5 style="color: #003E72;">Connect with Us</h3>
