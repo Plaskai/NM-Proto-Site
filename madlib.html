@@ -26,26 +26,10 @@
   <style>
   .sitemap-menu
   {
-    /*display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    list-style: none;
-    padding: 0 3.125vw;
-    margin: 0;
-    -webkit-order: 1;
-    -ms-flex-order: 1;
-    order: 1;
-    -webkit-margin-before: 1em;
-    -webkit-margin-after: 1em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    -webkit-padding-start: 40px;*/
     display: flex;
     list-style: none;
     padding: 0 3.125vw;
     margin: 0px;
-    /*margin-top: 20px;*/
-    /*margin-bottom: 20px;*/
   }
   .sitemap--links
   {
@@ -220,46 +204,48 @@
       right: 0;
       background: linear-gradient(rgba(0, 0, 0, .51), transparent);
       height: 6.75vw;
+      border-style: none;
     }
+
     .brand-image {
+      /*width: 350px;
+      height: auto;
+      margin-top: -50px;*/
       width: 20%;
       height: auto;
-      margin-top: -60px;
+      margin-top: -3%;
     }
-    .navbar {
-      position: relative;
-      min-height: 50px;
-      border-radius: 0px !important;
-      margin-bottom: -170px !important;
-      border-style: none;
-      border-top: none;
-      border-left: none;
-      border-right: none;
-      border-bottom: : 1px solid transparent;
-    }
+
     .navbar-nav {
       display: inline-block !important;
       float: right !important;
-      margin: 40px 20px 0px 0px;
-      font-size: 20px;
+      margin: 0px 20px 0px 0px;
+      margin-top: -.8%;
+      font-size: 18px;
     }
+
     .navbar-nav li {
       display: inline-block !important;
       list-style: none;
     }
+
     .navbar-nav li a {
       text-decoration: none;
       color: white !important;
     }
+
     .navbar-nav li:active {
       background-color: black !important;
     }
+
     .top-nav-collapse {
       background: rgba(255, 255, 255, 0.5);
+      border-style: none;
       border-bottom-style: solid;
-      border-bottom-width: 1px;
+      border-bottom-width: 3px;
       border-bottom-color: white;
     }
+
     .collapse-text {
       background-color: #002B49 !important;
     }
@@ -377,10 +363,19 @@
       /*float: left;*/
     }
     .navbar-collapse.collapse {
-      margin-top: -60px !important;
+      margin-top: -1.6%; !important;
     }
     .subscription{
       font-size: 16px;
+    }
+    .section-one {
+      height: 90vh;
+      width: auto;
+      /*background-image: url("../Images/starry-night.jpg");*/
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-position: center top;
+      margin-top: -20px;
     }
   </style>
   <script>
@@ -427,15 +422,14 @@
 </head>
 
 <body>
-  <div "hero-image">
+  <div "section-one">
     <nav class="navbar navbar-default">
       <div class="containter-fluid">
         <div class="navbar header">
           <a class="navbar-brand" href="#"><img class="brand-image" src="./Images/nmlogoW.png"></a>
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-              <li><a class="menu-btn" href="./index.html#whyNM">Why NM</a></li>
-              <!-- <li><a class="menu-btn" href="./index.html#tools-content">Tools & Content</a></li> -->
+              <li><a class="menu-btn" href="#whyNM">Why NM</a></li>
               <li><a class="menu-btn" href="#content">Life & Money</a></li>
             </ul>
           </div>
