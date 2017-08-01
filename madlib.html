@@ -97,12 +97,19 @@
       margin-top: -60px;
     }
     .intro {
-      /*font-family: "Guardian Sans", "Helvetica Neue";*/
       text-align: center;
-      /*font-size: 20px;*/
-      /*padding-bottom: 30px;
-      padding-left: 50px;*/
-      /*color: #F5F5F5;*/
+      font-family: "Guardian Sans", "Helvetica Neue", Arial, sans-serif;
+      font-weight: 200;
+      font-size: 1.5625vw;
+      margin: 0 0 3.125vw 0;
+      line-height: 2.875vw;
+      letter-spacing: .0625vw;
+      color: #2a2a2a;
+    }
+    .info {
+      text-align: center;
+      padding-left: 200px;
+      padding-right: 200px;
       font-family: "Guardian Sans", "Helvetica Neue", Arial, sans-serif;
       font-weight: 200;
       font-size: 1.5625vw;
@@ -112,12 +119,9 @@
       color: #2a2a2a;
     }
     .madlib {
-      /*margin-top: 30px;*/
       padding-top: 60px;
       font-size: 30px;
-      /*font-family: Arial, Helvetica, sans-serif;*/
       font-family: "Guardian Sans", "Helvetica Neue";
-      /*color: #F5F5F5;*/
       background-color: #fff;
       width: 100%;
     }
@@ -208,12 +212,9 @@
     }
 
     .brand-image {
-      /*width: 350px;
-      height: auto;
-      margin-top: -50px;*/
       width: 20%;
       height: auto;
-      margin-top: -3%;
+      margin-top: -4.3%;
     }
 
     .navbar-nav {
@@ -263,13 +264,11 @@
     }
     .complete {
       font-size: 20px;
-      /*font-weight: bold;*/
       outline: none;
     }
     .form-madlib {
       font-weight: 400;
       background-color: #fff;
-      /*padding-right: -100px;*/
     }
     .circle {
       transition-duration: .25s;
@@ -320,9 +319,9 @@
     }
     .col-md-4 {
       text-align: right;
+      margin-top: 2vw;
     }
     .hero-image {
-      /*background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("Images/starry-night.jpg");*/
       -webkit-justify-content: center;
       -ms-flex-pack: center;
       justify-content: center;
@@ -333,13 +332,11 @@
       height: 33.75vw;
       width: 100vw;
       background-color: #042f4b;
-      /*position: absolute;*/
     }
     .starry-night {
       width: 100%;
     }
     .goalSteps {
-      /*margin-top: 50px;*/
       width: 100%
     }
     .form-madlib li {
@@ -359,8 +356,6 @@
       width: 250px;
       height: auto;
       right: 100px;
-      /*margin-top: 30px;*/
-      /*float: left;*/
     }
     .navbar-collapse.collapse {
       margin-top: -1.6%; !important;
@@ -371,7 +366,6 @@
     .section-one {
       height: 90vh;
       width: auto;
-      /*background-image: url("../Images/starry-night.jpg");*/
       background-repeat: no-repeat;
       background-size: 100% 100%;
       background-position: center top;
@@ -437,7 +431,6 @@
       </div>
     </nav>
     <img src="Images/starry-night.jpg" class="starry-night">
-    <!-- <h1 style="color:white;z-index:3;">"Success is a journey, not a destination."</h1> -->
   </div>
   <div class="center" name="form-panel">
     <h1 id="Journey">Congratulations On Taking The First Step Towards Financial Freedom</h1>
@@ -447,6 +440,7 @@
   </div>
   <div name="HowWeHelp" class="Help-pane">
     <h1 id="Headers"> How We Help</h1>
+    <p class="info">We are all human and we believe every individual’s financial situation is different. Our financial planning philosophy is tailored for your individual financial needs, preference, and lifestyle. Anytime is the right time to take the next step.</p>
     <div class="container-fluid" style="margin-bottom:30px;">
       <div class="row" style="margin-top:-15px; text-align:center;">
         <div class="col-md-4" style="text-align:center;">
@@ -463,19 +457,18 @@
     <div class="container-fluid">
       <div class="row">
         <div name="past" class="col-md-4" style="text-align: center;">
-          <h3>Break Free</h3>
+          <h3 style="font-size:24px;">Break Free</h3>
           <p id="column-description">Student loans? Credit card debt? No problem. We’ll help you form a holistic plan to pay off any incurred debt.
           </p>
         </div>
         <div name="present" class="col-md-4" style="text-align: center;">
-          <h3>Maintain Your Lifestyle</h3>
+          <h3 style="font-size:24px;">Maintain Your Lifestyle</h3>
           <p id="column-description">Your greatest assets are your income, your time, and your family.  We will set you up with a plan to protect them.
           </p>
         </div>
         <div name="future" class="col-md-4" style="text-align: center;">
-          <h3>Plan For The Future</h3>
-          <p id="column-description">TThe key to building your future is starting now. If you want to live tomorrow your way, there’s no better time than the present to begin
-            .</p>
+          <h3 style="font-size:24px;">Plan For The Future</h3>
+          <p id="column-description">The key to building your future is starting now. If you want to live tomorrow your way, there’s no better time than the present to begin.</p>
         </div>
       </div>
     </div>
@@ -496,11 +489,11 @@
         <li id="AgeGoal" class="placement active">I am <input id="ageInput" class="input--age" type=age placeholder="30"> and I care about
           <div class="btn-group">
             <select name="ad_account_selected" class="selectpicker" data-style="btn-new" data-width="520px">
-                <option>Sorting through my past obligations</option>
-                <option>Securing What I care about</option>
-                <option>Planning for the Future</option>
-                <option>All of the above</option>
-                <option>I'm not sure</option>
+              <option>Breaking Free From My Past</option>
+              <option>Protecting my Assets Today </option>
+              <option>Planning for my Future</option>
+              <option>All of the above</option>
+              <option>I'm not sure</option>
             </select>
           </div>
         </li>
