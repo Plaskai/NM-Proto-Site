@@ -31,25 +31,25 @@
 }
 
 .slide-2 {
-  background-image: url('./images/testimonial-3.png');
+  background-image: url('../images/testimonial-3.png');
   background-position: 50% 50%;
   background-size: cover;
 }
 
 .slide-3 {
-  background-image: url('./images/testimonial-5.png');
+  background-image: url('../images/testimonial-5.png');
   background-position: 50% 0px;
   background-size: cover;
 }
 
 .slide-4 {
-  background-image: url('./images/testimonial-4.png');
+  background-image: url('../images/testimonial-4.png');
   background-position: 50% 50%;
   background-size: cover;
 }
 
 .slide-5 {
-  background-image: url('./images/testimonial-2.png');
+  background-image: url('../images/testimonial-2.png');
   background-position: 50% 50%;
   background-size: cover;
 }
