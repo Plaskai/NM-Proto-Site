@@ -330,12 +330,13 @@
       z-index: 1;
       overflow: visible;
       padding: 6.25vw 0 6.25vw 0;
-      height: 33.75vw;
+      height: 33.75vh;
       width: 100vw;
       background-color: #042f4b;
     }
     .starry-night {
       width: 100%;
+      height: 75vh;
     }
     .goalSteps {
       width: 100%
@@ -365,7 +366,7 @@
       font-size: 16px;
     }
     .section-one {
-      height: 90vh;
+      /*height: 90vh;*/
       width: auto;
       background-repeat: no-repeat;
       background-size: 100% 100%;
@@ -417,21 +418,23 @@
 </head>
 
 <body>
-  <div "section-one">
+  <div>
     <nav class="navbar navbar-default">
       <div class="containter-fluid">
         <div class="navbar header">
           <a class="navbar-brand" href="#"><img class="brand-image" src="./Images/nmlogoW.png"></a>
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-              <li><a class="menu-btn" href="#whyNM">Why NM</a></li>
-              <li><a class="menu-btn" href="#content">Life & Money</a></li>
+              <li><a class="menu-btn" href="#whyNM">PLANNING PROCESS</a></li>
+              <li><a class="menu-btn" href="#content">LIFE & MONEY</a></li>
             </ul>
           </div>
         </div>
       </div>
     </nav>
-    <img src="Images/starry-night.jpg" class="starry-night">
+    <div id="landing">
+      <img src="Images/starry-night.jpg" class="starry-night" id="image">
+    </div>
   </div>
   <div class="center" name="form-panel">
     <h1 id="Journey">Congratulations On Taking The First Step Towards Financial Freedom</h1>
