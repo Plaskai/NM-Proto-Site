@@ -16,12 +16,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/i18n/defaults-*.min.js"></script>
-  <script>
-    $(".dropdown-menu li a").click(function() {
-      var selText = $(this).text();
-      $(this).parents('.form-group').find('button[data-toggle="dropdown"]').html(selText + ' <span class="caret"></span>');
-    });
-  </script>
 
   <style>
   .sitemap-menu
@@ -422,7 +416,7 @@
     <nav class="navbar navbar-default">
       <div class="containter-fluid">
         <div class="navbar header">
-          <a class="navbar-brand" href="https://new.northwesternmutual.com/">
+          <a class="navbar-brand" href="https://new.northwesternmutual.com/" style="margin-top:5px">
             <img class="brand-image" src="./Images/nmlogoW.png">
           </a>
           <div class="collapse navbar-collapse" id="myNavbar">
@@ -460,13 +454,13 @@
       <ul name="form" class="form-madlib">
         <li id="AgeGoal" class="placement active">I am <input id="ageInput" class="input--age" type=age placeholder="30"> and I care about
           <div class="btn-group">
-            <select name="ad_account_selected" class="selectpicker" data-style="btn-new" data-width="520px">
-              <option>improving my day to day spending</option>
-              <option>alleviating my debt</option>
-              <option>protecting my assets today </option>
-              <option>planning for my future</option>
-              <option>all of the above</option>
-              <option>I'm not sure</option>
+            <select name="ad_account_selected" class="selectpicker" data-style="btn-new" data-width="520px" style="text-align:center;">
+              <option style="font-size: 2.5rem;margin-left:-100px;">improving my day to day spending</option>
+              <option style="font-size: 2.5rem;margin-left:-100px;">alleviating my debt</option>
+              <option style="font-size: 2.5rem;margin-left:-100px;">protecting my assets today </option>
+              <option style="font-size: 2.5rem;margin-left:-100px;">planning for my future</option>
+              <option style="font-size: 2.5rem;margin-left:-100px;">all of the above</option>
+              <option style="font-size: 2.5rem;margin-left:-100px;">I'm not sure</option>
             </select>
           </div>
         </li>
